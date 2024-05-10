@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Apr 26 08:42:32 2024
+# Process ID: 29568
+# Current directory: E:/Codes/Projects/Digital-Logic-Experimentation/lab4/decoder/decoder.runs/impl_1
+# Command line: vivado.exe -log decoder.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source decoder.tcl -notrace
+# Log file: E:/Codes/Projects/Digital-Logic-Experimentation/lab4/decoder/decoder.runs/impl_1/decoder.vdi
+# Journal file: E:/Codes/Projects/Digital-Logic-Experimentation/lab4/decoder/decoder.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source decoder.tcl -notrace
