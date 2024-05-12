@@ -72,13 +72,16 @@ endmodule
 并行加法器（超前进位加法器）各位的进位不是由前一级全加器的进位输出来提供的，而是由**专门的进位门**来提供的。
 
 引入进位传递函数 $P_i$ 和进位产生函数 $G_i$ 如下：
+
 $$
 \begin{cases}
 P_i = X_i + Y_i, \\
 G_i = X_iY_i.
 \end{cases}
 $$
+
 则各位进位可以被表示为：
+
 $$
 \begin{align*}
 C_1 & = G_1 + P_1C_0, \\
@@ -200,9 +203,11 @@ endmodule
 ![仿真](./testbench_waveform.png)
 
 可以看出，当 $a \in \{0,1, \cdots 15\}, b \in \{0, 1, \cdots, 15\}, \text{cin} \in \{0, 1\}$ 时，$a + b + \text{cin}$ 分别取值为
+
 $$
 0, 1, 1, 2, \cdots, 15, 16/ 1, 2, 2, 3, \cdots, 16, 17/ \cdots/ 15, 16, 16, 17, \cdots, 30, 31.
 $$
+
 由图知 $\text{s}_1$ 为 $a + b + \text{cin}$ 的十位，$s_0$ 为 $a + b + \text{cin}$ 的个位。
 
 ## 功能测试
