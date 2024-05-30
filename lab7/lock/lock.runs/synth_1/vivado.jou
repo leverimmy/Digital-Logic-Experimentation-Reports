@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu May 30 22:43:00 2024
+# Process ID: 7452
+# Current directory: E:/Codes/Projects/Digital-Logic-Experimentation/lab7/lock/lock.runs/synth_1
+# Command line: vivado.exe -log lock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lock.tcl
+# Log file: E:/Codes/Projects/Digital-Logic-Experimentation/lab7/lock/lock.runs/synth_1/lock.vds
+# Journal file: E:/Codes/Projects/Digital-Logic-Experimentation/lab7/lock/lock.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lock.tcl -notrace
