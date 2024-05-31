@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu May 30 22:43:43 2024
+| Date         : Fri May 31 08:09:46 2024
 | Host         : Worptop running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file lock_control_sets_placed.rpt
 | Design       : lock
@@ -76,9 +76,9 @@ Table of Contents
 |  CLK_IBUF_BUFG |                 |                  |                1 |              2 |
 |  CLK_IBUF_BUFG | acc_i_1_n_0     | RST_IBUF         |                1 |              2 |
 |  CLK_IBUF_BUFG | p_0_in[4]       |                  |                1 |              4 |
-|  CLK_IBUF_BUFG | p_0_in[0]       |                  |                1 |              4 |
 |  CLK_IBUF_BUFG | p_0_in[8]       |                  |                2 |              4 |
 |  CLK_IBUF_BUFG | p_0_in[12]      |                  |                1 |              4 |
+|  CLK_IBUF_BUFG | p_0_in[0]       |                  |                1 |              4 |
 |  CLK_IBUF_BUFG |                 | RST_IBUF         |                3 |              6 |
 |  CLK_IBUF_BUFG | pwd[15]_i_1_n_0 |                  |                4 |             16 |
 +----------------+-----------------+------------------+------------------+----------------+

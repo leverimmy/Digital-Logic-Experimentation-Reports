@@ -163,7 +163,6 @@ module adder_2 (
     assign seg0 = F % 10;
 
 endmodule
-
 ```
 
 ## 软件仿真
