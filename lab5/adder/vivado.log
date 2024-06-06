@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 15 08:39:02 2024
+# Process ID: 16968
+# Current directory: E:/Codes/Projects/Digital-Logic-Experimentation/lab5/adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15400 E:\Codes\Projects\Digital-Logic-Experimentation\lab5\adder\adder.xpr
+# Log file: E:/Codes/Projects/Digital-Logic-Experimentation/lab5/adder/vivado.log
+# Journal file: E:/Codes/Projects/Digital-Logic-Experimentation/lab5/adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Codes/Projects/Digital-Logic-Experimentation/lab5/adder/adder.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramFiles/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 856.488 ; gain = 182.723
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 15 08:40:24 2024...
