@@ -2,7 +2,7 @@
 
 Repository for the reports of Digital Logic Experimentation, 2024 Spring
 
-|   文件夹名称    |           实验内容           |
+|    作业名称     |           实验内容           |
 | :-------------: | :--------------------------: |
 |      lab1       |      实验一：示波器实验      |
 |      lab2       |  实验二：与非门电路测试实验  |
