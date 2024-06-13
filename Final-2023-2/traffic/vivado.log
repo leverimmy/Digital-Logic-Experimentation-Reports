@@ -1,0 +1,340 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jun 13 20:35:35 2024
+# Process ID: 16696
+# Current directory: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-2/traffic
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21608 E:\Codes\Projects\Digital-Logic-Experimentation\Final-2023-2\traffic\traffic.xpr
+# Log file: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-2/traffic/vivado.log
+# Journal file: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-2/traffic\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-2/traffic/traffic.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023/traffic' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramFiles/Xilinx/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+create_project detector E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector -part xc7a35tfgg484-2
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramFiles/Xilinx/Vivado/2019.2/data/ip'.
+file mkdir E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.srcs/sources_1/new
+close [ open E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.srcs/sources_1/new/detector.sv w ]
+add_files E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.srcs/sources_1/new/detector.sv
+file mkdir E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.srcs/constrs_1/new
+close [ open E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.srcs/constrs_1/new/detector.xdc w ]
+add_files -fileset constrs_1 E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.srcs/constrs_1/new/detector.xdc
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 21:35:36 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 21:35:36 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 21:36:15 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 21:36:15 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 943.621 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/0000003102A
+open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2156.887 ; gain = 1213.266
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 21:43:14 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 21:43:14 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 21:59:43 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 21:59:43 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 22:05:05 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 22:05:05 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 22:14:51 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 22:14:51 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 22:15:56 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 22:15:56 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 22:18:01 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 22:18:01 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 22:30:43 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 22:30:43 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/0000003102A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/0000003102A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 22:35:50 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 22:35:50 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 22:38:52 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 22:38:52 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 22:47:07 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 22:47:07 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 22:52:01 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 22:52:01 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Thu Jun 13 23:16:08 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 23:16:08 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 23:17:40 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 23:17:40 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 23:19:47 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 23:19:47 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 23:26:09 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 23:26:09 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 23:34:01 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 23:34:01 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 23:40:21 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 23:40:21 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 23:44:58 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 23:44:58 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 23:51:40 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 23:51:40 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 13 23:59:42 2024] Launched synth_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/synth_1/runme.log
+[Thu Jun 13 23:59:42 2024] Launched impl_1...
+Run output will be captured here: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 14 00:06:02 2024...

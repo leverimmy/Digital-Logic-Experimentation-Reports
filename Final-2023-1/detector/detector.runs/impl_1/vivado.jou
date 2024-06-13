@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jun 14 00:01:02 2024
+# Process ID: 1164
+# Current directory: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1
+# Command line: vivado.exe -log detector.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source detector.tcl -notrace
+# Log file: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1/detector.vdi
+# Journal file: E:/Codes/Projects/Digital-Logic-Experimentation/Final-2023-1/detector/detector.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source detector.tcl -notrace
