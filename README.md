@@ -12,5 +12,6 @@ Repository for the reports of Digital Logic Experimentation, 2024 Spring
 |      lab6       |      实验六：计数器实验      |
 |      lab7       |    实验七：串行密码锁实验    |
 |   Final-2022    |  2022 年期末考试题（之一）   |
-|   Final-2023    |  2023 年期末考试题（之一）   |
+|  Final-2023-1   |  2023 年期末考试题（之一）   |
+|  Final-2023-2   |  2023 年期末考试题（之二）   |
 | Simulation-2024 |    ~~随便找的一道模拟题~~    |
