@@ -1,0 +1,155 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Jun 14 09:33:16 2024
+| Host         : Worptop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file punch_control_sets_placed.rpt
+| Design       : punch
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    77 |
+|    Minimum number of control sets                        |    77 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   519 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    77 |
+| >= 0 to < 4        |    74 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              16 |           10 |
+| No           | Yes                   | No                     |              35 |           35 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              70 |           40 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+-----------------------+--------------------------------+------------------+----------------+
+|           Clock Signal          |     Enable Signal     |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++---------------------------------+-----------------------+--------------------------------+------------------+----------------+
+|  cnt_submit_reg[4]_LDC_i_1_n_0  |                       | cnt_submit_reg[4]_LDC_i_2_n_0  |                1 |              1 |
+|  cnt_submit_reg[9]_LDC_i_1_n_0  |                       | cnt_submit_reg[9]_LDC_i_2_n_0  |                1 |              1 |
+|  cnt_submit_reg[5]_LDC_i_1_n_0  |                       | cnt_submit_reg[5]_LDC_i_2_n_0  |                1 |              1 |
+|  cnt_submit_reg[6]_LDC_i_1_n_0  |                       | cnt_submit_reg[6]_LDC_i_2_n_0  |                1 |              1 |
+|  cnt_submit_reg[8]_LDC_i_1_n_0  |                       | cnt_submit_reg[8]_LDC_i_2_n_0  |                1 |              1 |
+|  cnt_submit_reg[7]_LDC_i_1_n_0  |                       | cnt_submit_reg[7]_LDC_i_2_n_0  |                1 |              1 |
+|  Score_reg[2]_LDC_i_1_n_0       |                       | Score_reg[2]_LDC_i_2_n_0       |                1 |              1 |
+|  Score_reg[0]_LDC_i_1_n_0       |                       | Score_reg[0]_LDC_i_2_n_0       |                1 |              1 |
+|  Score_reg[1]_LDC_i_1_n_0       |                       | Score_reg[1]_LDC_i_2_n_0       |                1 |              1 |
+|  CLK_IBUF_BUFG                  |                       | Score_reg[2]_LDC_i_1_n_0       |                1 |              1 |
+|  cnt_submit_reg[3]_LDC_i_1_n_0  |                       | cnt_submit_reg[3]_LDC_i_2_n_0  |                1 |              1 |
+|  CLK_IBUF_BUFG                  |                       | Score_reg[2]_LDC_i_2_n_0       |                1 |              1 |
+|  CLK_IBUF_BUFG                  |                       | Score_reg[0]_LDC_i_1_n_0       |                1 |              1 |
+|  CLK_IBUF_BUFG                  |                       | Score_reg[1]_LDC_i_1_n_0       |                1 |              1 |
+|  CLK_IBUF_BUFG                  |                       | Score_reg[1]_LDC_i_2_n_0       |                1 |              1 |
+|  CLK_IBUF_BUFG                  |                       | Score_reg[3]_LDC_i_1_n_0       |                1 |              1 |
+|  CLK_IBUF_BUFG                  |                       | Score_reg[3]_LDC_i_2_n_0       |                1 |              1 |
+|  CLK_IBUF_BUFG                  |                       | Score_reg[0]_LDC_i_2_n_0       |                1 |              1 |
+|  cnt_submit_reg[30]_LDC_i_1_n_0 |                       | cnt_submit_reg[30]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[2]_LDC_i_1_n_0  |                       | cnt_submit_reg[2]_LDC_i_2_n_0  |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[4]_LDC_i_1_n_0  |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[9]_LDC_i_1_n_0  |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[5]_LDC_i_1_n_0  |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[6]_LDC_i_1_n_0  |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[8]_LDC_i_1_n_0  |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[7]_LDC_i_1_n_0  |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[13]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[11]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[12]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[16]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[15]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[14]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[0]_LDC_i_1_n_0  |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[10]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[17]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[18]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[22]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[20]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[1]_LDC_i_1_n_0  |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[28]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[23]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[26]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[27]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[21]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[25]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[24]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[19]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[29]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[3]_LDC_i_1_n_0  |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[30]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  | cnt_submit            | cnt_submit_reg[2]_LDC_i_1_n_0  |                1 |              1 |
+|  Score_reg[3]_LDC_i_1_n_0       |                       | Score_reg[3]_LDC_i_2_n_0       |                1 |              1 |
+|  cnt_submit_reg[13]_LDC_i_1_n_0 |                       | cnt_submit_reg[13]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[11]_LDC_i_1_n_0 |                       | cnt_submit_reg[11]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[12]_LDC_i_1_n_0 |                       | cnt_submit_reg[12]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[16]_LDC_i_1_n_0 |                       | cnt_submit_reg[16]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[15]_LDC_i_1_n_0 |                       | cnt_submit_reg[15]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[14]_LDC_i_1_n_0 |                       | cnt_submit_reg[14]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[0]_LDC_i_1_n_0  |                       | cnt_submit_reg[0]_LDC_i_2_n_0  |                1 |              1 |
+|  cnt_submit_reg[10]_LDC_i_1_n_0 |                       | cnt_submit_reg[10]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[17]_LDC_i_1_n_0 |                       | cnt_submit_reg[17]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[18]_LDC_i_1_n_0 |                       | cnt_submit_reg[18]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[22]_LDC_i_1_n_0 |                       | cnt_submit_reg[22]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[20]_LDC_i_1_n_0 |                       | cnt_submit_reg[20]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[1]_LDC_i_1_n_0  |                       | cnt_submit_reg[1]_LDC_i_2_n_0  |                1 |              1 |
+|  cnt_submit_reg[28]_LDC_i_1_n_0 |                       | cnt_submit_reg[28]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[23]_LDC_i_1_n_0 |                       | cnt_submit_reg[23]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[26]_LDC_i_1_n_0 |                       | cnt_submit_reg[26]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[27]_LDC_i_1_n_0 |                       | cnt_submit_reg[27]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[21]_LDC_i_1_n_0 |                       | cnt_submit_reg[21]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[25]_LDC_i_1_n_0 |                       | cnt_submit_reg[25]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[24]_LDC_i_1_n_0 |                       | cnt_submit_reg[24]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[19]_LDC_i_1_n_0 |                       | cnt_submit_reg[19]_LDC_i_2_n_0 |                1 |              1 |
+|  cnt_submit_reg[29]_LDC_i_1_n_0 |                       | cnt_submit_reg[29]_LDC_i_2_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG                  |                       | RST_IBUF                       |                2 |              8 |
+|  CLK_IBUF_BUFG                  | Obj[3]_i_1_n_0        | RST_IBUF                       |                3 |              8 |
+|  CLK_IBUF_BUFG                  | cnt_total[30]_i_1_n_0 | RST_IBUF                       |                6 |             31 |
++---------------------------------+-----------------------+--------------------------------+------------------+----------------+
+
+

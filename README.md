@@ -15,3 +15,4 @@ Repository for the reports of Digital Logic Experimentation, 2024 Spring
 |  Final-2023-1   |  2023 年期末考试题（之一）   |
 |  Final-2023-2   |  2023 年期末考试题（之二）   |
 | Simulation-2024 |    ~~随便找的一道模拟题~~    |
+|   Final-2024    |  2024 年期末考试题（之一）   |
