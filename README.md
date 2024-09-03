@@ -1,6 +1,6 @@
 # Digital-Logic-Experimentation-Reports
 
-Repository for the reports of Digital Logic Experimentation, 2024 Spring
+Repository for the reports of Digital Logic Experimentation, Spring 2024
 
 |    作业名称     |           实验内容           |
 | :-------------: | :--------------------------: |
